@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MapCidade Contract Report</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Contract report</h1>
+    <form id="collect">
+      <label>City <select name="city" required></select></label>
+      <label>From <input type="date" name="start" required></label>
+      <label>Through <input type="date" name="end" required></label>
+      <label id="simulate-field" hidden>Simulate a source failure
+        <select name="simulate"><option value="">None</option><option value="vmDisks">VM disks</option><option value="ticketMirror">Ticket mirror</option><option value="helpdeskApi">Helpdesk API</option><option value="cityDb">City database</option></select>
+      </label>
+      <button>Collect</button>
+    </form>
+    <p id="status" role="status"></p>
+    <section id="review" hidden>
+      <h2>Review collected data</h2>
+      <ul id="sources"></ul>
+      <form id="draft">
+        <div id="fields"></div>
+        <button>Download Word report</button>
+      </form>
+    </section>
+    <section>
+      <h2>Recent reports</h2>
+      <ul id="history"></ul>
+    </section>
+  </main>
+</body>
+</html>

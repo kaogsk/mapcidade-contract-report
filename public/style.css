@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eef4f6; color: #15323d; font: 16px/1.55 system-ui, sans-serif; }
+main { margin: 3rem auto; width: min(860px, 90%); }
+form, section { margin: 1rem 0; }
+#collect, fieldset { padding: 1rem; border-radius: .6rem; border: 1px solid #c0d5dd; background: #fff; }
+#collect { display: flex; align-items: end; flex-wrap: wrap; gap: .8rem; }
+label { display: block; margin-block: .4rem; }
+[hidden] { display: none !important; }
+input, select, textarea, button { font: inherit; padding: .4rem .65rem; border: 1px solid #8aa8b4; border-radius: .3rem; }
+input:not([type="checkbox"]), select, textarea { display: block; }
+textarea { width: 100%; min-height: 6rem; }
+button { background: #17596e; color: white; border-color: #17596e; cursor: pointer; }
+button:disabled { opacity: .55; cursor: wait; }
+fieldset { margin: .65rem 0; }
+legend { font-weight: 650; }
+a { color: #17596e; }
